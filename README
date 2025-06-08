@@ -1,0 +1,21 @@
+Plugin Name: [Plugin Name]
+Creation Date: DD/MM/YYYY
+Last Update Date: [Current Date - DD/MM/YYYY]
+Author: [Plugin Author]
+Description: This is a plugin designed to [Do Something] for the [Domain Name] website.
+Version: 1.1
+
+== Installation: ==
+- Unzip the downloaded zip file.
+- Upload the plugin folder into the wp-content/plugins/ directory of your WordPress site.
+- Activate [Plugin Name] from Plugins page.
+
+[Plugin Name] will add “[Plugin Name]” to admin menu. Here you are able to configure all the plugin settings. 
+
+
+== Change log ==
+Last Updated: [Current Date - DD/MM/YYYY]
+Updated By: [Update Author]
+
+1.0   	- Base Plugin Initialization
+[Version]	- [Version Update]
