@@ -1,0 +1,11 @@
+{
+  "apiVersion": 2,
+  "name": "base_custom_plugin/basic_block",
+  "title": "Base Custom Plugin Block",
+  "category": "widgets",
+  "icon": "location",
+  "description": "Display the Base Custom Plugin block.",
+  "textdomain": "base_custom_plugin",
+  "editorScript": "file:./index.js",
+  "render": "render_basic_block"
+}

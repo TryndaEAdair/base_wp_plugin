@@ -9,7 +9,11 @@
 	Last Updated: [Current Date - DD/MM/YYYY]
 	Updated By: [Update Author]
 */
-   
+	// Define constants
+	define( 'GMD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+	define( 'GMD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+	
+	//Define Variables
 	$plugin_content = "Plugin could not be loaded properly";
 
 	function base_custom_install() {
@@ -34,6 +38,7 @@
 	
 	// Activation/Deactivation Hooks
 	register_activation_hook( __FILE__, 'base_custom_install' );
+	register_deactivation_hook( __FILE__, 'base_custom_deactivate' );
 	
 	add_action('wp_enqueue_scripts', 'base_custom_load_files');	
 ?>
