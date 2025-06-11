@@ -17,6 +17,9 @@
 	define( 'BASIC_CUSTOM_URL', plugin_dir_url( __FILE__ ) );
    
 	$plugin_content = "Plugin could not be loaded properly";
+	
+	// Include basic display logic
+	require_once plugin_dir_path(__FILE__) . 'includes/basic-display.php';
 
 	function base_custom_install() {
 		
@@ -64,6 +67,11 @@
 	//Init Actions
 	add_action('init', 'register_basic_block');	
 	add_action('wp_enqueue_scripts', 'base_custom_load_admin_files');	
+		
+	//Register Blocks
+	add_action('init', function() {
+		register_block_type(__DIR__ . '/blocks/basic_block');
+	});
 	
 	//Register Shortcodes
 	add_shortcode('basic_custom_plugin', 'render_basic_custom_shortcode');
